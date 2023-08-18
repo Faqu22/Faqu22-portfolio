@@ -1,9 +1,13 @@
-import './App.css'
+import './App.css';
+import Header from "./components/Header";
+import Home from "./components/Home.jsx";
+
 
 export default function App() {
     return (
-      <h1 className="text-xs font-bold underline">
-        Hello world!
-      </h1>
+        <div className='bg-custom-color min-h-screen'>
+            <Header />
+            <Home />
+        </div>
     )
   }
