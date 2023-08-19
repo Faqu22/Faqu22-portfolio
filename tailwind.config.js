@@ -8,7 +8,10 @@ export default {
         extend: {
             backgroundColor: {
               'custom-color': 'rgba(14,0,61,255)'
+            },
+            backgroundImage: {
+                "main": "url('./src/assets/bg.jpg')"
             }
-          }
+        }
         }
       }
