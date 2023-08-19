@@ -2,8 +2,10 @@ import './App.css';
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home.jsx";
 import Footer from './components/Footer';
-import About from './components/About';
+import About from './components/About/About';
 import Loader from './components/Loader';
+import Project from './components/Projects/Projects';
+
 import {
     BrowserRouter as Router,
     Route,
@@ -25,11 +27,12 @@ export default function App() {
     return (
         <Router>
         {loading && <Loader />}
-        <div className="bg-custom-color min-h-screen">
+        <div className="section pt-0 min-h-screen">
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/About" element={<About />} />
+                <Route path="/Projects" element={<Project />} />
             </Routes>
             <Footer />
         </div>
