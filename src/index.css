@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+.section {
+    position: relative !important;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../src/assets/bg-back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: 0;  
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -54,6 +73,79 @@ html, body {
   }
   
 .loader {
-    border-top-color: #3498db; /* Cambia este color según tu diseño */
+    border-top-color: #3498db;
     animation: spin 1s linear infinite;
   }
+
+.tech-icons {
+    font-size: 4.5em !important;
+    margin: 15px !important;
+    padding: 10px !important;
+    opacity: 0.93 !important;
+    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+    overflow: hidden !important;
+    transition: all 0.4s ease 0s !important;
+  }
+  
+@media (max-width: 767px) {
+    .tech-icons {
+      margin: 10px !important;
+    }
+  }
+  
+.tech-icons:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  }
+.tech-icon-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }
+
+
+.tech-icons svg {
+    display: initial;
+}
+
+.project-card {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: 600px;
+}
+  
+.project-card-view {
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+    color: white !important;
+    background-color: transparent !important;
+    opacity: 0.8 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+}
+.project-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+  
+.project-card-view img {
+    display: flex;
+}
+
+.min-w-64 {
+    max-width: 140px;
+}
+  
+.min-h-64 {
+    max-height: 140px;
+}

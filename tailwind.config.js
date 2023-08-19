@@ -6,6 +6,9 @@ export default {
     ],
     theme: {
         extend: {
+            width: {
+                '9/50': '18%'
+            },
             backgroundColor: {
               'custom-color': 'rgba(14,0,61,255)'
             },
