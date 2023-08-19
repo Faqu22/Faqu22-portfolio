@@ -6,7 +6,7 @@ import projectIcon from '../assets/project-icon.png';
 import resumeIcon from '../assets/resume-icon.png';
 import githubIcon from '../assets/github-icon.png';
 import githubCat from '../assets/github-cat.png';
-import Icon from '../Icon';
+import Icon from './Icon';
 
 function Header() {
     return (
