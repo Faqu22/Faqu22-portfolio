@@ -1,7 +1,7 @@
 import React from "react";
-import Man from '../assets/man-programmed.png';
+import Man from '../../assets/man-programmed.png';
 import Type from "./Type";
-import Bg from '../assets/bg.jpg';
+import Bg from '../../assets/bg.jpg';
 
 function Home() {
     return (

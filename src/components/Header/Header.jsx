@@ -1,11 +1,11 @@
 import React from "react";
-import logoImage from '../assets/name.png';
-import homeIcon from '../assets/home-icon.png';
-import aboutIcon from '../assets/about-icon.png';
-import projectIcon from '../assets/project-icon.png';
-import resumeIcon from '../assets/resume-icon.png';
-import githubIcon from '../assets/github-icon.png';
-import githubCat from '../assets/github-cat.png';
+import logoImage from '../../assets/name.png';
+import homeIcon from '../../assets/home-icon.png';
+import aboutIcon from '../../assets/about-icon.png';
+import projectIcon from '../../assets/project-icon.png';
+import resumeIcon from '../../assets/resume-icon.png';
+import githubIcon from '../../assets/github-icon.png';
+import githubCat from '../../assets/github-cat.png';
 import Icon from './Icon';
 
 function Header() {
