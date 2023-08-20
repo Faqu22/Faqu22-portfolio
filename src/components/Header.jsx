@@ -18,7 +18,7 @@ function Header() {
             <Icon name="Home" icon={homeIcon} path="/"/>
             <Icon name="About" icon={aboutIcon} path="/about"/>
             <Icon name="Projects" icon={projectIcon} path="/projects"/>
-            <Icon name="Resume" icon={resumeIcon} />
+            <Icon name="Resume" icon={resumeIcon} path="/resume"/>
                 <a href="https://github.com/Faqu22/Faqu22-Portfolio" role="link" className="flex items-center border-b-4 rounded-3xl py-1 px-2 border-transparent hover:border-blue-500 transition duration-300">
                     <img src={githubIcon} alt="Github Icon" className="h-6 pr-3 pl-3" />
                     <img src={githubCat} alt="Github Cat" className="h-6 pr-3" />
