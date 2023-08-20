@@ -6,14 +6,16 @@ import projectIcon from '../assets/project-icon.png';
 import resumeIcon from '../assets/resume-icon.png';
 import githubIcon from '../assets/github-icon.png';
 import githubCat from '../assets/github-cat.png';
+import { Link } from 'react-router-dom';
+
 import Icon from './Icon';
 
 function Header() {
     return (
         <div className=" relative bg-violet-900 bg-opacity-10 h-full w-full flex items-center justify-around space-x-80">
-            <a href="/">
+            <Link to="/">
                 <img src={logoImage} alt="Name" className="h-16 w-30 object-cover mr-10 ml-5" />
-            </a>
+            </Link>
             <nav className="flex space-x-10 text-lg"> 
             <Icon name="Home" icon={homeIcon} path="/"/>
             <Icon name="About" icon={aboutIcon} path="/about"/>
