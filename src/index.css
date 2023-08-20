@@ -13,7 +13,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../src/assets/bg-back.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -93,7 +92,7 @@ html, body {
     justify-content: center;
     box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
     overflow: hidden !important;
-    transition: all 0.4s ease 0s !important;
+    transition: all 0.1s ease 0s !important;
   }
   
 @media (max-width: 767px) {
@@ -150,3 +149,17 @@ html, body {
 .min-h-64 {
     max-height: 140px;
 }
+
+.resume-section {
+    position: relative !important;
+    padding-top: 110px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+    color: white !important;
+  }
+  
+  .resume {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
