@@ -1,8 +1,10 @@
 import React from "react";
-import Work from './Work';
-import Fixermate from '../../assets/fixermate.png';
-import Gieben from '../../assets/gieben.png';
-import Portfolio from '../../assets/name.svg'
+import Work from '../components/Work';
+import Fixermate from '../assets/fixermate.png';
+import Gieben from '../assets/gieben.png';
+import Portfolio from '../assets/name.svg'
+import Layout from "../layout";
+
 function Projects() {
     const projectData = [
         {
@@ -28,27 +30,29 @@ function Projects() {
     ];
 
     return (
-        <div className="relative pt-20 pb-8">
-            <div>
-                <h1 className="pb-2 text-5xl font-normal">
-                    My <strong className="text-pink-600">Works</strong>
-                </h1>
-                <span className="text-2xl">Browse a selection of my latest <strong>projects.</strong></span>
+        <Layout>
+            <div className="relative pt-20 pb-8">
+                <div>
+                    <h1 className="pb-2 text-5xl font-normal">
+                        My <strong className="text-pink-600">Works</strong>
+                    </h1>
+                    <span className="text-2xl">Browse a selection of my latest <strong>projects.</strong></span>
+                </div>
+                <div className="flex justify-center">
+                    {projectData.map((project, index) => (
+                        <div className="project-card flex w-1/3 h-auto" key={index}>
+                            <Work 
+                                imgPath={project.imgPath}
+                                title={project.title}
+                                description={project.description}
+                                ghLink={project.ghLink}
+                                demoLink={project.demoLink}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
-            <div className="flex justify-center">
-                {projectData.map((project, index) => (
-                    <div className="project-card flex w-1/3 h-auto" key={index}>
-                        <Work 
-                            imgPath={project.imgPath}
-                            title={project.title}
-                            description={project.description}
-                            ghLink={project.ghLink}
-                            demoLink={project.demoLink}
-                        />
-                    </div>
-                ))}
-            </div>
-        </div>
+        </Layout>
     );
 }
 
