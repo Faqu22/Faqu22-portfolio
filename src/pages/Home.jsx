@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Man from '../assets/man-programmed.png';
 import Type from "../components/Type";
-import Bg from '../assets/bg.jpg';
 import Layout from "../layout";
 
+
 function Home() {
+
     return (
         <Layout>
-            <div className=" section relative overflow-hidden">
-                <img src={Bg} className="absolute opacity-20 "></img>
+            <div className="relative overflow-hidden">
                 <div className="flex justify-around pt-28 items-center ">
                     <div className="text-left ml-24 mb-32">
                         <h1 className="mb-6 relative">
