@@ -1,8 +1,8 @@
-import React from "react";
-import Self from '../assets/Facundo.jpg';
+import React from 'react'
+import Self from '../assets/Facundo.jpg'
 import Card from '../components/Card'
-import Tech from "../components/Tech";
-import Tools from "../components/Tools";
+import Tech from '../components/Tech'
+import Tools from '../components/Tools'
 import Layout from '../layout.jsx'
 
 function About() {
@@ -19,12 +19,12 @@ function About() {
                         </div>
                     </div>
                     <div className="flex pt-28  h-screen relative">
-                        <img src={Self} alt="photo"  className="max-h-96 relative"/>
+                        <img src={Self} alt="photo" className="max-h-96 relative" />
                     </div>
                 </div>
                 <div className="relative">
                     <h1 className=" relative text-white text-4xl font-normal pt-3">
-                    Professional <strong className="text-pink-700">Skillset </strong>
+                        Professional <strong className="text-pink-700">Skillset </strong>
                     </h1>
                     <br />
                     <br />
@@ -36,7 +36,6 @@ function About() {
                     </h1>
                     <Tools />
                 </div>
-
             </div>
         </Layout>
     )

@@ -10,23 +10,23 @@ import Resume from './pages/Resume'
 const router = createHashRouter([
     {
         path: '/',
-        element: <Home />
+        element: <Home />,
     },
     {
         path: '/about',
-        element: <About />
+        element: <About />,
     },
     {
         path: '/projects',
-        element: <Projects />
+        element: <Projects />,
     },
     {
         path: '/resume',
-        element: <Resume />
-    }
+        element: <Resume />,
+    },
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+    <React.StrictMode>
         <RouterProvider router={router} />
-  </React.StrictMode>,
+    </React.StrictMode>,
 )
