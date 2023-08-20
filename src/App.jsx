@@ -31,8 +31,8 @@ export default function App() {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/About" element={<About />} />
-                <Route path="/Projects" element={<Project />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Project />} />
             </Routes>
             <Footer />
         </div>
