@@ -2,11 +2,8 @@ import React from 'react'
 
 const Button = ({ text, actionType, target, Image }) => {
     const handleClick = () => {
-        if (actionType === 'navigate') {
-            window.location.href = target
-        } else if (actionType === 'download') {
-            window.open(target, '_blank')
-        }
+        // Ambos casos usarán window.open() con '_blank' para abrir una nueva pestaña
+        window.open(target, '_blank')
     }
 
     return (

@@ -28,7 +28,7 @@ function Projects() {
             description:
                 "Dive into my portfolio to witness a blend of technical expertise and creativity. From robust backend solutions to  frontend designs, explore projects that mirror my passion for coding. Whether you're seeking collaboration or just curious, you're bound to find something that resonates.",
             ghLink: 'https://github.com/Faqu22/Faqu22-portfolio',
-            demoLink: '/',
+            demoLink: 'https://faqu22.github.io/Faqu22-portfolio/',
         },
     ]
 

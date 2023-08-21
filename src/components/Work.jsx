@@ -2,6 +2,7 @@ import React from 'react'
 import { CgWebsite } from 'react-icons/cg'
 import { BsGithub } from 'react-icons/bs'
 import Button from './Button'
+
 function Work(props) {
     return (
         <div className="project-card-view flex flex-col items-center">
