@@ -20,7 +20,7 @@ function Projects() {
             description:
                 "Step into the world of digital sculpting with my unique landing page dedicated to plaster sculptures. Harnessing the power of Three.js, I've recreated 3D models that not only exhibit the beauty of the art form but also provide an interactive experience. Dive in and customize sections of the body, tweaking and tailoring as you see fit, offering a blend of traditional artistry and modern technology.",
             ghLink: 'https://github.com/Faqu22/Gieben',
-            demoLink: 'https://google.com',
+            demoLink: 'https://faqu22.github.io/Gieben/',
         },
         {
             imgPath: Portfolio,
