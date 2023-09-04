@@ -19,7 +19,7 @@ function Work(props) {
                 <p className="px-3 text-slate-200">{props.technologies}</p>
                 <h3 className="pt-3 text-white text-lg font-medium">Status:</h3>
                 <span
-                    className={`text-justify pb-7 px-3 text-slate-200 text-base ${
+                    className={`text-justify pb-7 px-3 text-base ${
                         props.status === 1 ? 'text-green-500' : 'text-yellow-300'
                     }`}
                 >
