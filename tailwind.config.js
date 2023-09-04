@@ -1,20 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: [
-      "./index.html",
-      "./src/**/*.{js,ts,jsx,tsx}",
-    ],
+    content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
             width: {
-                '9/50': '18%'
+                '9/50': '18%',
             },
             backgroundColor: {
-              'custom-color': 'rgba(14,0,61,255)'
+                'custom-color': 'rgba(14,0,61,255)',
             },
             backgroundImage: {
-                "main": "url('./src/assets/bg.jpg')"
-            }
-        }
-        }
-      }
+                main: "url('./src/assets/bg.jpg')",
+            },
+        },
+    },
+}
